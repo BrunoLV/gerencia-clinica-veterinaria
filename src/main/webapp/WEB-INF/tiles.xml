@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <definition name="layout.tiles" template="/WEB-INF/views/layout/baseLayout.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="header" value="/WEB-INF/views/layout/header.jsp"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp"/>
+    </definition>
+
+    <!-- Animais -->
+    <definition name="animais.listar.tiles" extends="layout.tiles">
+        <put-attribute name="title" value="Gerenciador Veterinaria - Listagem de Animais" />
+        <put-attribute name="body" value="/WEB-INF/views/animais/listar.jsp" />
+    </definition>
+    <definition name="animais.cadastrar.tiles" extends="layout.tiles">
+        <put-attribute name="title" value="Gerenciador Veterinaria - Cadastro de Animais" />
+        <put-attribute name="body" value="/WEB-INF/views/animais/cadastrar.jsp" />
+    </definition>
+    <definition name="animais.editar.tiles" extends="layout.tiles">
+        <put-attribute name="title" value="Gerenciador Veterinaria - Edição de Animais" />
+        <put-attribute name="body" value="/WEB-INF/views/animais/editar.jsp" />
+    </definition>
+
+    <!-- Medicos -->
+    <definition name="medicos.listar.tiles" extends="layout.tiles">
+        <put-attribute name="title" value="Gerenciador Veterinaria - Listagem de Médicos" />
+        <put-attribute name="body" value="/WEB-INF/views/medicos/listar.jsp" />
+    </definition>
+    <definition name="medicos.cadastrar.tiles" extends="layout.tiles">
+        <put-attribute name="title" value="Gerenciador Veterinaria - Cadastro de Médicos" />
+        <put-attribute name="body" value="/WEB-INF/views/medicos/cadastrar.jsp" />
+    </definition>
+    <definition name="medicos.editar.tiles" extends="layout.tiles">
+        <put-attribute name="title" value="Gerenciador Veterinaria - Edição de Médicos" />
+        <put-attribute name="body" value="/WEB-INF/views/medicos/editar.jsp" />
+    </definition>
+
+    <!-- Animais -->
+    <definition name="prontuarios.listar.tiles" extends="layout.tiles">
+        <put-attribute name="title" value="Gerenciador Veterinaria - Listagem de Prontuarios" />
+        <put-attribute name="body" value="/WEB-INF/views/prontuarios/listar.jsp" />
+    </definition>
+    <definition name="prontuarios.cadastrar.tiles" extends="layout.tiles">
+        <put-attribute name="title" value="Gerenciador Veterinaria - Cadastro de Prontuarios" />
+        <put-attribute name="body" value="/WEB-INF/views/prontuarios/cadastrar.jsp" />
+    </definition>
+    <definition name="prontuarios.editar.tiles" extends="layout.tiles">
+        <put-attribute name="title" value="Gerenciador Veterinaria - Edição de Prontuarios" />
+        <put-attribute name="body" value="/WEB-INF/views/prontuarios/editar.jsp" />
+    </definition>
+
+</tiles-definitions>
